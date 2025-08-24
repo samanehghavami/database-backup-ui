@@ -1,5 +1,3 @@
-# database-backup-ui
-A simple cross-platform database backup tool with UI built using Flet. Supports MySQL and PostgreSQL.
 # Database Backup Tool (Flet)
 
 A simple desktop application to backup MySQL and PostgreSQL databases with a graphical interface built using [Flet](https://flet.dev/).
