@@ -12,14 +12,14 @@ def backup(db_type, host, user, password, database, path):
     elif db_type == "postgresql":
         cmd = f"pg_dump -h {host} -U {user} -d {database} -f {filename}"
     else:
-        return False, "❌ Invalid database type"
+        return False, " Invalid database type"
 
     if os.system(cmd) == 0:
-        return True, f"✅ Backup successfully saved at:\n{filename}"
+        return True, f" Backup successfully saved at:\n{filename}"
     else:
-        return False, "❌ Backup failed"
+        return False, " Backup failed"
 
-# UI با Flet
+
 def main(page: ft.Page):
     page.title = "Backup Database"
 
